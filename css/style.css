@@ -1,0 +1,353 @@
+*{
+    margin:0; /*Reset nos padrões do navegador*/
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+.center{ /*class auxiliar utilizada em todas as sections*/
+    display:flex;
+    max-width:1100px;
+    padding:0 2%;
+    margin:0 auto;
+    flex-wrap: wrap;
+}
+
+section.main{
+    background-image: url('/images/bg.svg');
+    background-position: center;
+    background-size: cover;
+    min-height:700px;
+    padding:20px 0 80px 0;
+}
+
+.menu{ display:flex; width:100%;}
+
+.logo-menu{width: 50%;}
+
+.items-menu{width:50%; text-align: right;}
+
+.items-menu a{
+    font-weight: bold;
+    color:white;
+    text-decoration: none;
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.items-menu a:hover{
+    border-bottom: 2px solid #FFDD33;
+}/*borda inferior amarela nos buttons*/
+
+.items-menu a.contact-btn{
+    background-color: #0F3FD3;
+    padding:10px 10px;
+    border-radius: 10px;
+}/*cor exclusiva para esse button*/
+
+.items-menu a.contact-btn:hover{ border:0; }/*cancelando hover*/
+
+.items-menu-mobile{
+    display: none;
+    width: 100%;
+    text-align: right;
+}
+
+.items-menu-mobile i{
+    font-size: 28px;
+    color: #FFDD33;
+    background-color: #0f40d3b2;
+    border-radius: 10px;
+    padding:10px;
+    position:relative;
+    top:0;
+    right:10px;
+    cursor: pointer;
+}
+
+.mockup{
+    display: block;
+    width:100%;
+    color: white;
+    text-align: center;
+    padding-top: 100px;    
+}
+
+.mockup h1{
+    font-size: 50px;
+    font-weight: normal;
+}
+
+.mockup p{ font-size:18px; margin-top:8px;}
+
+.mockup img{ /*Tornando img responsiva*/
+    max-width: 100%;
+    margin-top: 20px;
+    opacity: 90%;
+}
+
+.mockup img:hover{ 
+    cursor:pointer;
+    transform: scale(1.005, 1.005);
+    opacity: 1;
+}
+
+section.marcas{ padding:100px 0;}
+
+section.marcas img{ width: calc(100% / 5);}
+
+section.porque-nos{ 
+    padding: 40px 0; 
+    background-color:#FBFCFE;
+}
+
+section.porque-nos > .center{ max-width: 1280px;}
+
+section.porque-nos > .center > h2{
+    font-size: 50px;
+    text-align: center;
+    width:100%;   
+    padding: 10px 0;
+}
+
+section.porque-nos > .center > p{
+    font-size: 20px;
+    color:#ccc;
+    text-align: center;
+    width:100%;
+}
+
+.diferenciais{ 
+    display: flex; 
+    margin-top: 50px;
+}
+
+.box-diferenciais{
+    box-shadow: 0px 20px 40px #2426721C;
+    width:31%;
+    margin-right: 2%;
+    padding:10px 20px;
+    border-radius: 10px;
+}
+
+.box-diferenciais h3{
+    font-size: 28px;
+    margin:20px 0;
+    color:black;
+}
+
+.box-diferenciais p{
+    font-size:13px;
+    color:#7E92AC;
+    margin-bottom: 20px;
+}
+
+section.cta{
+    background-image: url('/images/banner_meio.png');
+    background-size:cover;
+    background-position:center;
+    padding:40px 10px;
+    min-height:300px;
+    text-align: center;
+    color:white;
+}
+
+section.cta h2,
+section.cta h4{
+    font-weight: normal;
+    margin:10px 0;
+    padding:10px 0;
+}
+
+section.cta h2{ font-size: 40px;}
+
+section.cta a{
+    display:inline-block;
+    padding:15px 30px;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 18px;
+    background: #FFDD33;
+    text-decoration: none;
+    color:#0F3FD3;
+    margin:10px 0;
+}
+
+section.beneficios{ padding:50px 0;}
+
+.lista-beneficios{
+    margin-top: 30px;
+    width:40%; 
+} /*Divide a section 'beneficios'*/
+.img-beneficios{ width:60%;}
+
+.lista-beneficios h1{
+    color: black;
+    font-size:48px;
+}
+
+.lista-beneficios p{
+    vertical-align: middle;
+    font-size: 15px;
+    color:#7E92AC;
+}
+
+.lista-beneficios span{ 
+    display:inline-block;
+    width: calc(100% - 70px);
+}/*Colocando img e parágrafo lado a lado*/
+.lista-beneficios img{
+    display:inline-block;
+    vertical-align: middle;
+    width:70px;
+}
+
+.img-beneficios img{ max-width:100%;}
+
+.lista-beneficios a{
+    margin:14px 0 0 20px;
+    padding:15px 30px;
+    display:inline-block;
+    font-weight: bold;
+    font-size: 18px;
+    text-decoration: none;
+    color:white;
+    background: #255AFF;
+    border-radius: 10px;     
+}
+
+section.depoimentos{
+    background-color: #FBFCFE;
+    padding:40px 0;
+}
+
+section.depoimentos > h1{
+    text-align: center;
+    font-size:50px;
+}
+
+.container-slider{
+    overflow: hidden; 
+    padding:40px 0;
+} /*esconder qtd. definida de slides*/
+
+.container-slider-single{
+    float:left;
+    height:372px;
+    background-color:rgb(245, 247, 250);
+    border-radius: 20px;
+    text-align: center;
+    padding: 40px 10px;
+}
+
+.container-slider h3{
+    color:black;
+    font-weight: normal;
+    text-align: center;
+    font-size: 30px;
+}
+
+.container-slider h4{
+    color:#7E92AC;
+    opacity: 90%;
+    font-size: 18px;
+    text-align: center;   
+}
+
+.container-slider-single p{
+    margin:15px 0;
+    font-size: 14px;
+    color: #7E92AC;
+}
+
+/****SLICK SLIDER****/
+.slick-slide{ margin-left:27px;}
+.slick-list{ margin-left:-27px;} /* the parent */
+.slick-dotted ul{
+    display: block;
+	list-style-type: none;
+	text-align: center;
+	position: relative;
+	top:30px;
+}
+.slick-dotted li{
+	display: inline-block;
+	margin: 0 7px;
+}
+.slick-dotted button:focus{ outline: 0;}
+.slick-dotted li button{
+	width: 16px;
+	height: 16px;
+	border-radius: 8px;
+	color: #d8d8d8;
+	border-width: 0;
+	background: #d8d8d8;
+	opacity: 1;
+	cursor: pointer;
+}
+li.slick-active button{
+	background: #373855;
+	color: #373855;
+}
+.slick-slide:focus{ outline: none;} 
+/*****FIM do SLICK SLIDER*****/
+
+section.contato{
+    padding:40px 0;
+    text-align: center;   
+}
+
+section.contato form{ width: 100%;}
+
+section.contato h1{
+    font-size: 60px;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.contato input[type=text],
+.contato input[type=email]{
+    width: 100%;
+    height: 50px;
+    margin: 10px 0;
+    padding-left: 10px;
+    border-radius: 10px;
+    background: #FCFDFF;
+    border: 1px solid #C3CCE8;
+}
+
+.contato textarea{
+    width: 100%;
+    min-height: 120px;
+    margin: 10px 0;
+    border-radius: 10px;
+    background: #FCFDFF;
+    border: 1px solid #C3CCE8;
+    padding: 10px;
+    resize:vertical;
+}
+
+.contato input[type=submit]{
+    width:100%;
+    height:50px;
+    margin:10px 0;
+    border:0;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: #0F3FD3;
+    color: white;
+    display: block;
+}
+
+footer{
+    padding:10px 0;
+    background-color: #255AFF;
+    color: white;
+}
+
+.text-footer{
+    width:50%;
+    padding: 8px 0;
+}
